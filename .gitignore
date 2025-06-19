@@ -1,0 +1,82 @@
+# Created by Gemini Code Assist for Golang
+
+### Go ###
+
+# Compiled executable files
+# These are typically the output of `go build`
+# You might want to customize this if your executables have different names
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+
+# Test binaries
+# Output of `go test -c`
+*.test
+
+# Coverage profiless
+# Output of `go test -coverprofile`
+coverage.out
+coverage.txt
+coverage.html
+profile.out
+
+# Go workspace files (less common with Go Modules, but good to have)
+bin/
+pkg/
+
+# Dependency directories (if you are not committing vendor)
+# Modern Go modules usually handle dependencies without needing to commit the vendor folder.
+# If you *do* use `go mod vendor` and want to commit the vendor directory,
+# then you should remove or comment out the 'vendor/' line.
+# vendor/
+
+# IDE-specific files
+# VS Code
+.vscode/
+
+# GoLand / IntelliJ
+.idea/
+*.iml
+
+# General
+# OS-generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+*.log.*
+
+# Temporary files
+*~
+*.tmp
+*.swp
+*.swo
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.test
+
+# Secrets - although these should ideally be managed outside of git
+# and never committed, this is a safety net.
+secrets.yml
+secrets.json
+*.pem
+*.key
+*.keychain
+
+# If you use specific build tools or linters that generate local files, add them here.
+# For example:
+# .golangci.yml (if you only want to share a template, not local overrides)
